@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pia Ilistina</title>
+    <link rel="icon" href="pia ilistina.jpg" type="image">
+    <link rel="stylesheet" href="profil.css"> <!-- Tautan ke CSS eksternal -->
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo" aria-label="Homepage">MyPortfolio</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="hero-content">
+                <h1>Welcome to My Portfolio</h1>
+                <p>Discover my work, skills, and projects.</p>
+                <button onclick="scrollToSection('about')">Learn More</button>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <h2>About Me</h2>
+            <div class="profile">
+                <img src="pia ilistina.jpg" alt="Deskripsi Foto" class="rounded-photo">
+                <h4>Pia Ilistina</h4>
+
+            </div>
+            <p>I am a passionate web developer with a focus on creating stunning and user-friendly web experiences.</p>
+            <p>Skills: HTML, CSS, JavaScript, React, UI/UX Design</p>
+        </section>
+
+        <section id="projects" class="projects">
+            <h2>My Projects</h2>
+            <div class="project-list">
+                <article class="project">
+                    <h3>Project 1</h3>
+                    <p>Description of Project 1.</p>
+                </article>
+                <article class="project">
+                    <h3>Project 2</h3>
+                    <p>Description of Project 2.</p>
+                </article>
+                <article class="project">
+                    <h3>Project 3</h3>
+                    <p>Description of Project 3.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Contact Me</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+                
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script src="profil.js"></script> <!-- Tautan ke JavaScript eksternal -->
+</body>
+</html>
