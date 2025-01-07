@@ -1,0 +1,261 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Poppins', Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+    overflow-x: hidden;
+}
+
+h1, h2, h3 {
+    color: #2c3e50;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header Styles */
+header {
+    background: rgb(53, 175, 236);
+    color: #fff;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li {
+    margin: 0 1.5rem;
+}
+
+.nav-links a {
+    color: #fff;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #f4f4f4;
+}
+
+/* Hero Section Styles */
+.hero {
+    background: linear-gradient(135deg, #36a9e1, #53a5ec);
+    color: #fff;
+    padding: 4rem 0;
+    text-align: center;
+    clip-path: ellipse(150% 100% at 50% 0%);
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin: 1.5rem auto;
+    max-width: 600px;
+}
+
+.hero-content button {
+    background: #4CAF50;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    font-size: 1.1rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.hero-content button:hover {
+    background: #45a049;
+    transform: translateY(-3px);
+}
+
+.rounded-photo {
+    width: 150px; /* Sesuaikan ukuran */
+    height: 150px; /* Sesuaikan ukuran */
+    border-radius: 50%; /* Membuat gambar menjadi bulat */
+    border: 4px solid #36a9e1; /* Garis tepi berwarna biru */
+    object-fit: cover; /* Agar gambar tetap proporsional */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan jika diperlukan */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.rounded-photo:hover {
+    transform: scale(1.05); /* Efek zoom saat hover */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Section Styles */
+section {
+    padding: 3rem 1rem;
+    margin: 2rem 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+section h2 {
+    margin-bottom: 1rem;
+    font-size: 2.2rem;
+    position: relative;
+}
+
+section h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: #36a9e1;
+    margin: 0.5rem auto;
+    border-radius: 5px;
+}
+
+/* Projects Section */
+.project-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.project {
+    width: 30%;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.project h3 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: #36a9e1;
+}
+
+.project p {
+    color: #555;
+}
+
+/* Contact Section */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+form label {
+    display: block;
+    margin: 0.5rem 0;
+    color: #333;
+}
+
+form input, form textarea, form button {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+}
+
+form input:focus, form textarea:focus {
+    outline: none;
+    border-color: #36a9e1;
+    box-shadow: 0 0 5px rgba(53, 175, 236, 0.5);
+}
+
+form button {
+    background: #36a9e1;
+    color: #fff;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+form button:hover {
+    background: #2b8ac6;
+    transform: translateY(-3px);
+}
+
+/* Footer Styles */
+footer {
+    background: rgb(53, 175, 236);
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 2rem;
+    border-top: 5px solid #36a9e1;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #f4f4f4;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .project {
+        width: 100%;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
